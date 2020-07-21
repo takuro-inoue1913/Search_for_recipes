@@ -16,7 +16,6 @@
       height: 70px;
       li {
         line-height: 60px;
-        font-size: 35px;
         a {
           color: white;
           font-size: 20px;
@@ -27,6 +26,9 @@
       }
       li.nav_link {
         margin-right: 50px;
+      }
+      li.nav_logo a {
+        font-size: 35px;
       }
     }
     ul li:nth-of-type(2) {
