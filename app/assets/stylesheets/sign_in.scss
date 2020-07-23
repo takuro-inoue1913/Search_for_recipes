@@ -36,6 +36,19 @@
       }
     }
   }
+  div.container {
+    a {
+      display: block;
+      width: 250px;
+      margin: 0 auto;
+      text-align: center;
+      color: brown;
+      margin-top: 20px;
+      &.signinPage_password {
+        margin-top: 10px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
