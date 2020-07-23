@@ -17,6 +17,9 @@
     input.form-control {
       border: none;
       border-bottom: 1px solid darkgray;
+      &#user_password_confirmation {
+        font-size: 10px;
+      }
     }
     div.form-check {
       margin-top: 15px;
@@ -48,6 +51,14 @@
       margin-bottom: 20px;
       font-size: 20px;
       color: darkorange;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .signupPage {
+    form div.form-group {
+      margin: 0 0 20px 0;
     }
   }
 }

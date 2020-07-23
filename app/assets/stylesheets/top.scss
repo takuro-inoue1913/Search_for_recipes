@@ -4,61 +4,98 @@
   height: 1000px;
   background-size: cover;
   opacity: 0.8;
-    header {
-      background-color: black;
-      opacity: 0.9;
-    }
-    ul {
-      display: flex;
-      justify-content: flex-start;
-      color: white;
-      list-style: none;
-      height: 70px;
-      li {
-        line-height: 70px;
-        a {
-          color: white;
-          font-size: 20px;
-          text-decoration: none;
-          i {
-            margin-right: 5px;
-          }
+  header {
+    background-color: black;
+    opacity: 0.9;
+  }
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    list-style: none;
+    height: 70px;
+    li {
+      line-height: 70px;
+      a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        i {
+          margin-right: 5px;
         }
       }
-      li.nav_link {
-        margin-right: 50px;
-        a:hover {
-          color: brown;
-        }
-      }
-      li.nav_logo a {
-        margin-left: 50px;
-        font-size: 35px;
+    }
+    li.nav_link {
+      margin-right: 50px;
+      a:hover {
+        color: brown;
       }
     }
-    ul li:nth-of-type(2) {
-      margin-left: auto;
+    li.nav_logo a {
+      margin-left: 50px;
+      font-size: 35px;
+    }
+  }
+  ul li:nth-of-type(2) {
+    margin-left: auto;
+  }
+  &_contents {
+    margin-top: 420px;
+    h1 {
+      font-size: 100px;
+      color: #000;
+    }
+    a.Toppage_contents_btn {
+      display: inline-block;
+      font-size: 25px;
+      margin-top: 10px;
+      margin-left: 95px;
+      color: cornsilk;
+      background-color: brown;
+      border-radius: 15px;
+      height: 60px;
+      width: 220px;
+      line-height: 45px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .TopPage {
+    background-image: none;
+    height: 0;
+    div.container {
+      background-image: url("/images/top_image.jpg");
+      background-size: 147%;
+      background-repeat: no-repeat;
+      margin-top: 70px;
+      height: 313px;
     }
     &_contents {
-      margin-top: 420px;
+      margin-top: 0;
       h1 {
-        font-size: 100px;
-        color: #000;
+        padding-top: 155px;
+        font-size: 45px;
       }
       a.Toppage_contents_btn {
-        display: inline-block;
-        font-size: 25px;
-        margin-top: 10px;
-        margin-left: 95px;
-        color: cornsilk;
-        background-color: brown;
-        border-radius: 15px;
-        height: 60px;
-        width: 220px;
-        line-height: 45px;
-        &:hover {
-          opacity: 0.8;
+        display: block;
+        margin: 125px 38px 0px 38px;
+      }
+    }
+    ul {
+      li.nav_logo a {
+        margin-left: 10px;
+        font-size: 28px;
+      }
+      li.nav_link {
+        margin-right: 10px;
+        a {
+          font-size: 15px;
         }
       }
     }
   }
+}
