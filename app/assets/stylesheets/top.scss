@@ -15,10 +15,11 @@
       list-style: none;
       height: 70px;
       li {
-        line-height: 60px;
+        line-height: 70px;
         a {
           color: white;
           font-size: 20px;
+          text-decoration: none;
           i {
             margin-right: 5px;
           }
@@ -26,8 +27,12 @@
       }
       li.nav_link {
         margin-right: 50px;
+        a:hover {
+          color: brown;
+        }
       }
       li.nav_logo a {
+        margin-left: 50px;
         font-size: 35px;
       }
     }
