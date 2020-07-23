@@ -4,6 +4,9 @@
   height: 1000px;
   background-size: cover;
   opacity: 0.8;
+  div.container {
+    --animate-duration: 3s;
+  } 
   header {
     background-color: black;
     opacity: 0.9;

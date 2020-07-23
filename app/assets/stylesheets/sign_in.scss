@@ -1,4 +1,4 @@
-.signupPage {
+.signinPage {
   &_title {
     text-align: center;
     font-size: 50px;
@@ -21,59 +21,31 @@
         font-size: 10px;
       }
     }
-    div.form-check {
-      margin-top: 15px;
-      margin-left: 15px;
-      label {
-        font-size: 20px;
-        margin: 0;
-      }
-    }
-    input#file_photo {
-      margin-top: 20px;
-      font-size: 15px;
-    }
-    div.userImgPreview {
-      margin: 0 auto;
-      display: none;
-      text-align: center;
-      &.is-active {
-        display: block;
-      }
-      img.userImgPreview_content {
-        height: 100px;
-      }
-    }
   }
   div.text-center {
-    input.submitBtn {
-      font-size: 25px;
+    input.loginBtn {
+      font-size: 35px;
       background-color: brown;
       color: white;
       border-radius: 15px;
-      padding: 10px 20px;
+      padding: 10px 25px;
+      margin-top: 30px;
+      border: none;
       &:hover {
         opacity: 0.7;
       }
-    }
-    a {
-      display: block;
-      margin-top: 30px;
-      margin-bottom: 20px;
-      font-size: 20px;
-      color: darkorange;
     }
   }
 }
 
 @media screen and (max-width: 500px) {
-  .signupPage form div.form-group {
+  .signinPage form div.form-group {
     margin: 0 0 25px 0;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .signupPage form div.form-group {
+  .signinPage form div.form-group {
     margin: 0 0 25px 0;
   }
 }

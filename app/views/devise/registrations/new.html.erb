@@ -49,6 +49,9 @@
           <div>Profile Picture</div>
           <%= f.file_field :image, id: "file_photo" %>
         </label>
+        <div class="userImgPreview" id="userImgPreview">
+          <img id="thumbnail" class="userImgPreview_content" accept="image/*" src="">
+        </div>
       </div>
       <div class="text-center">
         <%= f.submit "Creating a Chef", class: "btn submitBtn" %>
