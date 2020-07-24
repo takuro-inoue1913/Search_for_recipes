@@ -7,7 +7,14 @@
     color: chocolate;
   }
   form div.form-group {
-    margin: 0 250px 20px 250px;
+    margin: 0 250px 35px 250px;
+    border-bottom: 1px solid darkgray;
+    &.speciality_radioButton, &.profilePicture {
+      border: none;
+    }
+    textarea.form-control {
+      height: 150px;
+    }
     label {
       margin-bottom: 10px;
       margin-left: 15px;
@@ -16,7 +23,6 @@
     }
     input.form-control {
       border: none;
-      border-bottom: 1px solid darkgray;
     }
     div.form-check {
       margin-top: 15px;
