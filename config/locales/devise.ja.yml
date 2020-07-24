@@ -27,13 +27,15 @@ ja:
               too_long: "は%{count}文字以下に設定して下さい。"
               invalid: "は有効でありません。"
               confirmation: "が内容とあっていません。"
+            password_confirmation:
+              confirmation: "がPasswordと異なります。"
     attributes:
       user:
         current_password: "現在のパスワード"
         name: 名前
-        email: "メールアドレス"
-        password: "パスワード"
-        password_confirmation: "確認用パスワード"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password Again"
         remember_me: "次回から自動的にログイン"
     models:
       user: "ユーザ"
@@ -78,7 +80,12 @@ ja:
         we_need_your_current_password_to_confirm_your_changes: "変更を反映するには現在のパスワードを入力してください"
       new:
         sign_up: "アカウント登録"
+      user:
+        signed_up: "新しいアカウント作成に成功しました"
     sessions:
+      signed_in: "新規登録に成功しました"
+      signed_out: "ログアウトしました"
+      already_signed_out: "すでにログアウト済みです"
       new:
         sign_in: "ログイン"
     shared:
@@ -93,3 +100,14 @@ ja:
     unlocks:
       new:
         resend_unlock_instructions: "アカウントの凍結解除方法を再送する"
+    failure:
+      user:
+      already_authenticated: "あなたはすでにログインしています"
+      inactive: "あなたのアカウントはまだ有効になっていません。"
+      invalid: "無効な%{authentication_keys}かパスワードです"
+      locked: "あなたのアカウントはロックされています。"
+      last_attempt: "アカウントがロックされる前に、もう一回試してみてください。"
+      not_found_in_database: "無効な %{authentication_keys} またはパスワードです。"
+      timeout: "セッションは終了しました。続けるには、もう一度サインインしてください。"
+      unauthenticated: "継続する前にサインアップするか、サインアップする必要があります。"
+      unconfirmed: "メールアドレスを確認してから先に進みます。"
