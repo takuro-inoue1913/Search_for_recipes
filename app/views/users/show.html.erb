@@ -1,12 +1,11 @@
 <div class="UserShowPage">
+  <%= render 'layouts/header' %>
   <div class="container">
     <div class="row">
       <div class="col-6">
-        <%= image_tag @user.image.url(:thumb) %>
       </div>
       <div class="col-6">
         <%= @user.name %>
-        <%= @user.email %>
         <%= @user.speciality %>
         <%= @user.self_introduction %>
       </div>

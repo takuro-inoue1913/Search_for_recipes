@@ -1,0 +1,28 @@
+<header class="CommonHeader">
+  <ul>
+    <li class="nav_logo"><a href="/">Cook Bot</a></li>
+    <li class="nav_btn">
+      <i class="fas fa-bars fa-fw"></i>
+    </li>
+    <li class="nav_link">
+      <%= link_to(user_path(@user.id)) do %>
+        <i class="fas fa-search fa-fw"></i>Search for Recipes
+      <% end %>
+    </li>
+    <li class="nav_link">
+      <%= link_to(user_path(@user.id)) do %>
+        <i class="far fa-clipboard fa-fw"></i>My Recipes
+      <% end %>
+    </li>
+    <li class="nav_link">
+      <%= link_to(user_path(@user.id)) do %>
+        <i class="fas fa-pencil-alt fa-fw"></i>Edit Profile
+      <% end %>
+    </li>
+    <li class="nav_link">
+      <%= link_to(user_path(@user.id)) do %>
+        <i class="fas fa-sign-in-alt fa-fw"></i>Log out
+      <% end %>
+    </li>
+  </ul>
+</header>
