@@ -1,0 +1,121 @@
+.TopPage {
+  background-image: url("/images/top_image.jpg");
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.TopPage div.container {
+  --animate-duration: 2.5s;
+}
+
+.TopPage header {
+  background-color: black;
+  opacity: 0.9;
+}
+
+.TopPage ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: white;
+  list-style: none;
+  height: 70px;
+}
+
+.TopPage ul li {
+  line-height: 70px;
+}
+
+.TopPage ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.TopPage ul li a i {
+  margin-right: 5px;
+}
+
+.TopPage ul li.nav_link {
+  margin-right: 50px;
+}
+
+.TopPage ul li.nav_link a:hover {
+  color: brown;
+}
+
+.TopPage ul li.nav_logo a {
+  margin-left: 50px;
+  font-size: 35px;
+}
+
+.TopPage ul li:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.TopPage_contents {
+  margin-top: 420px;
+}
+
+.TopPage_contents h1 {
+  font-size: 100px;
+  color: #000;
+}
+
+.TopPage_contents a.Toppage_contents_btn {
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 95px;
+  color: cornsilk;
+  background-color: brown;
+  border-radius: 15px;
+  height: 60px;
+  width: 220px;
+  line-height: 45px;
+}
+
+.TopPage_contents a.Toppage_contents_btn:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) {
+  .TopPage {
+    background-image: none;
+    height: 0;
+  }
+  .TopPage div.container {
+    background-image: url("/images/top_image.jpg");
+    background-size: 147%;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    height: 313px;
+  }
+  .TopPage_contents {
+    margin-top: 0;
+  }
+  .TopPage_contents h1 {
+    padding-top: 170px;
+    font-size: 45px;
+  }
+  .TopPage_contents a.Toppage_contents_btn {
+    display: block;
+    margin: 160px auto 40px auto;
+  }
+  .TopPage ul li.nav_logo a {
+    margin-left: 10px;
+    font-size: 28px;
+  }
+  .TopPage ul li.nav_link {
+    margin-right: 10px;
+  }
+  .TopPage ul li.nav_link a {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=top.css.map */

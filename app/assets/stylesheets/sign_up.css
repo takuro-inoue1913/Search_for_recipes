@@ -1,0 +1,92 @@
+.signupPage_title {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  color: chocolate;
+}
+
+.signupPage form div.form-group {
+  margin: 0 250px 35px 250px;
+  border-bottom: 1px solid darkgray;
+}
+
+.signupPage form div.form-group.speciality_radioButton, .signupPage form div.form-group.profilePicture {
+  border: none;
+}
+
+.signupPage form div.form-group textarea.form-control {
+  height: 150px;
+}
+
+.signupPage form div.form-group label {
+  margin-bottom: 10px;
+  margin-left: 15px;
+  font-size: 25px;
+  color: darkgray;
+}
+
+.signupPage form div.form-group input.form-control {
+  border: none;
+}
+
+.signupPage form div.form-group div.form-check {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.signupPage form div.form-group div.form-check label {
+  font-size: 15px;
+  margin: 0;
+}
+
+.signupPage form div.form-group input#file_photo {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.signupPage form div.form-group div.userImgPreview {
+  margin: 0 auto;
+  display: none;
+  text-align: center;
+}
+
+.signupPage form div.form-group div.userImgPreview.is-active {
+  display: block;
+}
+
+.signupPage form div.form-group div.userImgPreview img.userImgPreview_content {
+  height: 100px;
+}
+
+.signupPage div.text-center input.submitBtn {
+  font-size: 25px;
+  background-color: brown;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+.signupPage div.text-center input.submitBtn:hover {
+  opacity: 0.7;
+}
+
+.signupPage div.text-center a {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: brown;
+}
+
+@media screen and (max-width: 500px) {
+  .signupPage form div.form-group {
+    margin: 0 0 25px 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .signupPage form div.form-group {
+    margin: 0 0 25px 0;
+  }
+}
+/*# sourceMappingURL=sign_up.css.map */

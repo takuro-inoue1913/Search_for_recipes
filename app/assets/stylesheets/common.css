@@ -1,0 +1,93 @@
+header.CommonHeader {
+  background-color: black;
+  opacity: 0.9;
+}
+
+header.CommonHeader ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: white;
+  list-style: none;
+  height: 70px;
+}
+
+header.CommonHeader ul li {
+  line-height: 70px;
+}
+
+header.CommonHeader ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+header.CommonHeader ul li a i {
+  margin-right: 5px;
+}
+
+header.CommonHeader ul li.nav_link {
+  margin-right: 50px;
+}
+
+header.CommonHeader ul li.nav_link a:hover {
+  color: brown;
+}
+
+header.CommonHeader ul li.nav_btn {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+header.CommonHeader ul li.nav_btn i.fa-fw {
+  display: none;
+}
+
+header.CommonHeader ul li.nav_logo a {
+  margin-left: 50px;
+  font-size: 35px;
+}
+
+header.CommonHeader ul li:nth-of-type(2) {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  header.CommonHeader ul {
+    display: block;
+  }
+  header.CommonHeader ul li.nav_link {
+    background-color: gray;
+    opacity: 0.6;
+    width: 100%;
+    height: 150%;
+    margin-right: 0;
+    padding-left: 30px;
+    line-height: 105px;
+    display: none;
+  }
+  header.CommonHeader ul li.nav_link a {
+    color: white;
+  }
+  header.CommonHeader ul li.nav_link.is_active.animate__animated.animate__fadeInRight {
+    display: inline-block;
+    --animate-duration: 0.5s;
+  }
+  header.CommonHeader ul li.nav_btn {
+    text-align: right;
+    margin: -75px 15px 0 0;
+    color: white;
+  }
+  header.CommonHeader ul li.nav_btn i.fa-fw {
+    display: inline-block;
+    cursor: pointer;
+  }
+  header.CommonHeader ul li.nav_logo a {
+    margin-left: 15px;
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=common.css.map */
