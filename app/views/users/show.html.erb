@@ -1,13 +1,21 @@
 <div class="UserShowPage">
   <%= render 'layouts/header' %>
   <div class="container">
-    <div class="row">
-      <div class="col-6">
-      </div>
-      <div class="col-6">
-        <%= @user.name %>
-        <%= @user.speciality %>
-        <%= @user.self_introduction %>
+    <div class="UserShowPage_main">
+      <h2>Profile</h2>
+      <div class="row">
+        <div class="col-6">
+          <%= image_tag @user.image.url(:thumb), class: "UserShowPage_UserImage" %>
+        </div>
+        <div class="col-6">
+          <div class="UserShowPage_Profile">
+            <ul>
+              <li class="UserItem">Name :<br><span><%= @user.name %></span></li>
+              <li class="UserItem">得意料理 :<br><span><%= @user.speciality %></span></li>
+              <li class="UserItem">自己紹介 :<br><span><%= @user.self_introduction %></span></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
