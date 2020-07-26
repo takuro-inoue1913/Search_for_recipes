@@ -17,6 +17,7 @@ $(document).ready(function(){
     $(this).removeClass('fa-bars');
     $(this).addClass('fa-times');
     $('ul li.nav_link').addClass('is_active animate__animated animate__fadeInRight');
+    // $('.UserShowPage_UserImage').css('display', 'none');
   },function(){
     $(this).css({'transition': '', 'transform': ''});
     $(this).removeClass('fa-times');

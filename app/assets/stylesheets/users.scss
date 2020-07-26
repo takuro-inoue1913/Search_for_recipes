@@ -5,6 +5,8 @@
     background-color: brown;
     height: 80px;
     line-height: 105px;
+    letter-spacing: 3px;
+    font-style: oblique;
   }
   .container {
     color: white;
@@ -17,6 +19,8 @@
   &_main {
     margin: 10px;
     border: double 5px #FFD700;
+    height: auto;
+    padding-bottom: 45px;
   }
   .row {
     height: 375px;
@@ -24,11 +28,13 @@
     margin-left: 0;
   }
   &_UserImage {
-    margin-left: 80px;
+    margin-left: 125px;
     margin-top: 30px;
-    border-radius: 15px;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
-    border: 4px solid black;
+    border: 1px solid white;
+    max-width: 350px;
+    max-height: 325px;
+    height: auto;
   }
   &_Profile {
     ul {
@@ -42,6 +48,38 @@
           display: inline-block;
           margin: 10px 0 0 30px;
         }
+      }
+      li:nth-child(3) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .UserShowPage {
+    h2 {
+      font-size: 45px;
+    }
+    .container {
+      margin-top: 110px;
+    }
+    &_main {
+      height: 925px;
+      .col-6 {
+        flex: none;
+        max-width: 100%;
+      }
+    }
+    &_UserImage {
+      display: block;
+      margin: 30px auto 0 auto;
+      max-width: 150px;
+      max-height: none;
+    }
+    &_Profile {
+      ul {
+        margin-top: 30px;
+        margin-right: 0;
       }
     }
   }

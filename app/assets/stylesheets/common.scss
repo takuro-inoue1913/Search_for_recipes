@@ -43,11 +43,16 @@ header.CommonHeader {
 
 @media screen and (max-width: 1000px) {
   header.CommonHeader {
+    z-index: 9999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
     ul {
       display: block;
       li.nav_link {
-        background-color: gray;
-        opacity: 0.6;
+        background-color: black;
+        opacity: 0.9;
         width: 100%;
         height: 150%;
         margin-right: 0;
