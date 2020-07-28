@@ -15,12 +15,12 @@
       <% end %>
     </li>
     <li class="nav_link">
-      <%= link_to(user_path(@user.id)) do %>
+      <%= link_to(edit_user_registration_path) do %>
         <i class="fas fa-pencil-alt fa-fw"></i>Edit Profile
       <% end %>
     </li>
     <li class="nav_link">
-      <%= link_to(user_path(@user.id)) do %>
+      <%= link_to(destroy_user_session_path, method: :delete) do %>
         <i class="fas fa-sign-in-alt fa-fw"></i>Log out
       <% end %>
     </li>

@@ -83,7 +83,7 @@ ja:
       user:
         signed_up: "新しいアカウント作成に成功しました"
     sessions:
-      signed_in: "新規登録に成功しました"
+      signed_in: "ログインしました"
       signed_out: "ログアウトしました"
       already_signed_out: "すでにログアウト済みです"
       new:

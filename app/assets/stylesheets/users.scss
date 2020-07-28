@@ -23,7 +23,7 @@
     padding-bottom: 45px;
   }
   .row {
-    height: 375px;
+    height: 310px;
     margin-right: 0;
     margin-left: 0;
   }
@@ -51,20 +51,22 @@
       }
       li:nth-child(3) {
         margin-top: 20px;
+        display: block;
+        overflow: auto;
       }
     }
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
   .UserShowPage {
     h2 {
       font-size: 45px;
     }
     .container {
       margin-top: 110px;
+      width: 96%;
     }
     &_main {
-      height: 925px;
       .col-6 {
         flex: none;
         max-width: 100%;
@@ -78,8 +80,14 @@
     }
     &_Profile {
       ul {
+        font-size: 15px;
         margin-top: 30px;
         margin-right: 0;
+        li:nth-child(3) span {
+          margin: 10px 0 0 5px;
+          display: block;
+          overflow: auto;
+        }
       }
     }
   }

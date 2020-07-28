@@ -1,0 +1,55 @@
+.UserEditPage {
+  &_title {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    color: chocolate;
+  }
+  &_userImage {
+    display: block;
+    max-width: 200px;
+    margin: 0px auto 15px auto;
+    box-shadow: 5px 5px 7px grey;
+    border: 1px solid white;
+  }
+  form.edit_user {
+    margin: 0 250px 20px 250px;
+    .form-group {
+      margin-bottom: 30px;
+      border-bottom: 1px solid darkgray;
+      label {
+        font-size: 20px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+      }
+      .form-control,
+      &.UserEditPage_speciality, &.UserEditPage_image {
+        border: none;
+      }
+      textarea {
+        height: 140px;
+      }
+      &.UserEditPage_speciality {
+        font-size: 20px;
+        margin-left: 5px;
+        .Speciality_radio_button {
+          margin-top: 10px;
+          margin-left: 15px;
+        }
+        label {
+          font-size: 15px;
+        }
+      }
+      &.UserEditPage_image {
+        font-size: 20px;
+        margin-left: 5px;
+        .Image_file {
+          margin-top: 10px;
+          margin-left: 15px;
+          font-size: 15px;
+        }
+      }
+    }    
+  }
+}
